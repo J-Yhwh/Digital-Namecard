@@ -1,5 +1,7 @@
 # Digital_Namecard
 
+
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
@@ -35,4 +37,9 @@ npm run dev
 
 ```sh
 npm run build
+```
+
+### Screenshot of Digital Namecard: 
+```
+![Name Card Demo](screenshot.png))
 ```
