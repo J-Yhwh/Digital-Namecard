@@ -40,6 +40,6 @@ npm run build
 ```
 
 ### Screenshot of Digital Namecard: 
-```
+
 ![Name Card Demo](screenshot.png))
-```
+
