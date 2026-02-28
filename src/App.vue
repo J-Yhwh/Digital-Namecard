@@ -6,12 +6,12 @@ import { useClipboard } from '@vueuse/core'
 
 // Profile data
 const profile = ref({
-  name: 'Jacquie Lin',
+  name: 'Your Full Name',
   title: 'Privacy & Data Analyst',
   phone: '+65 9123 4567',
-  email: 'jacquie@example.com',
+  email: 'abc@example.com',
   website: 'https://github.com/J-Yhwh',
-  linkedin: 'https://linkedin.com/in/jacquie-lin',
+  linkedin: 'https://linkedin.com/in/your_name',
   location: 'Singapore',
   bio: 'Building tools to understand browser tracking & privacy'
 })
