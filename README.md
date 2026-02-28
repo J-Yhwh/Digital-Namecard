@@ -40,5 +40,3 @@ npm run build
 ```
 
 
-![Name Card Demo](screenshot.png))
-
