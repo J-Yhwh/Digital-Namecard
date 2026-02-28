@@ -5,6 +5,18 @@ This template should help get you started developing with Vue 3 in Vite.
 
 ![Name Card Demo](screenshot.png)
 
+**Live Demo:** (add Vercel/Netlify link when deployed)
+
+**Features:**
+- vCard format auto-save to phone contacts via QR
+- Native share button (iOS/Android)
+- Clipboard fallback
+- Responsive & modern design (Vue 3 + TypeScript + Vite + Tailwind)
+
+**CI Status:** ![CI](https://github.com/J-Yhwh/Digital-Namecard/workflows/CI/badge.svg)
+
+Tech stack: Vue 3, TypeScript, Vite, Tailwind CSS, QRCode.vue, @vueuse/core
+
 
 ## Recommended IDE Setup
 
