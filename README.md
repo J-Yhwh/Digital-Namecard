@@ -1,8 +1,9 @@
 # Digital_Namecard
 
-
-
+Interactive digital name card with vCard QR code & share — built with Vue 3, TypeScript, Vite & Tailwind
 This template should help get you started developing with Vue 3 in Vite.
+
+<image-card alt="Digital Name Card" src="screenshot.png" ></image-card>
 
 ## Recommended IDE Setup
 
