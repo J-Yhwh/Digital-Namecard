@@ -8,7 +8,8 @@ import { useClipboard } from '@vueuse/core'
 const profile = ref({
   name: 'Jane Doe',
   title: 'Privacy & Data Analyst',
-  phone: '+65 9123 4567',
+  mobile1: '+65 91234567',
+  mobile2: '+61 456789012',
   email: 'abc@example.com',
   website: 'https://github.com/J-Yhwh',
   linkedin: 'https://linkedin.com/in/your_name',
@@ -24,6 +25,10 @@ N:${profile.value.name};;;
 FN:${profile.value.name}
 TITLE:${profile.value.title}
 TEL;TYPE=CELL:${profile.value.phone}
+
+TEL;TYPE=CELL:+65 91234567
+TEL;TYPE=CELL:+61 456789012
+
 EMAIL:${profile.value.email}
 URL:${profile.value.website}
 NOTE:${profile.value.bio}
@@ -96,8 +101,9 @@ const shareCard = async () => {
 
       <!-- Details -->
       <div class="px-8 pb-8 space-y-4 text-gray-700 text-center">
-        <p><strong>Phone:</strong> {{ profile.phone }}</p>
-        <p><strong>Email:</strong> <a :href="`mailto:${profile.email}`" class="text-blue-600 hover:underline">{{ profile.email }}</a></p>
+        <p><strong>Mobile 1:</strong> {{ profile.mobile1 }}</p>
+        <p><strong>Mobile 2:</strong> {{ profile.mobile2 }}</p>
+	    <p><strong>Email:</strong> <a :href="`mailto:${profile.email}`" class="text-blue-600 hover:underline">{{ profile.email }}</a></p>
         <p><strong>Website:</strong> <a :href="profile.website" target="_blank" class="text-blue-600 hover:underline">{{ profile.website }}</a></p>
         <p><strong>LinkedIn:</strong> <a :href="profile.linkedin" target="_blank" class="text-blue-600 hover:underline">{{ profile.linkedin }}</a></p>
         <p class="text-sm text-gray-500 mt-6">{{ profile.bio }}</p>
