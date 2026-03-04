@@ -6,7 +6,7 @@ import { useClipboard } from '@vueuse/core'
 
 // Profile data
 const profile = ref({
-  name: 'Your Full Name',
+  name: 'Jane Doe',
   title: 'Privacy & Data Analyst',
   phone: '+65 9123 4567',
   email: 'abc@example.com',
