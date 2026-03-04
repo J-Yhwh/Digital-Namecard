@@ -3,11 +3,6 @@
 Interactive digital name card with vCard QR code & share — built with Vue 3, TypeScript, Vite & Tailwind.
 This template should help get you started developing with Vue 3 in Vite.
 
-<image-card alt="Vue 3" src="https://img.shields.io/badge/Vue.js-3-4FC08D?logo=vue.js&logoColor=white" ></image-card>
-<image-card alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" ></image-card>
-<image-card alt="Vite" src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white" ></image-card>
-<image-card alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white" ></image-card>
-
 
 ![Name Card Demo](screenshot.png)
 
