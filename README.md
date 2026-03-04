@@ -30,6 +30,11 @@ Tech stack: Vue 3, TypeScript, Vite, Tailwind CSS, QRCode.vue, @vueuse/core
 - Firefox:
   - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
   - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- Safari(Webkit):
+  - Vue.js devtools is **not** available as a native extension in Safari (Apple ecosystem restricts certain extensions).
+  - **Recommended workaround:** -> Use Safari’s built-in **Web Inspector** (Develop → Show Web Inspector) and the `Vue DevTools` bookmarklet
+    from https://github.com/vuejs/vue-devtools/tree/main/packages/bookmarklet (drag to bookmarks bar → click on your page to load a mini inspector).
+  
 
 ## Customize configuration
 
