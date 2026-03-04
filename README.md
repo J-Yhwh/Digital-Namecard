@@ -42,20 +42,29 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 
 ## Project Setup
 
-```sh
-npm install
+1. Install node.js and vue 
+```bash
+npm install -D \
+  @vitejs/plugin-vue \
+  typescript \
+  vue-tsc \
+  tailwindcss \
+  postcss \
+  autoprefixer \
+  @types/node \
+  vueuse/core
 ```
 
 ### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
+```bash
+cd ~/Directory...FILEPATH/ npm run dev
 ```
 
 ### Compile and Minify for Production
 
-```sh
-npm run build
+```bash
+~/Directory...FILEPATH/ npm run build
 ```
 
 
