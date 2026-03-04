@@ -55,13 +55,12 @@ npm install -D \
   vueuse/core
 ```
 
-### Compile and Hot-Reload for Development
-
+2. Compile and Hot-Reload for Development (opens to http://localhost:5173 at the browser)
 ```bash
 cd ~/Directory...FILEPATH/ npm run dev
 ```
 
-### Compile and Minify for Production
+3. Compile and Minify for Production (modify/add/overhaul design)
 
 ```bash
 ~/Directory...FILEPATH/ npm run build
