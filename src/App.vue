@@ -13,7 +13,7 @@ const profile = ref({
   mobile2: '+61 487654321',
   email: 'sherry@mail.com',
   website: 'https://github.com/J-Yhwh',
-  bio: 'Creation takes precedence over destruction.'
+  bio: 'Python is my kind of snake.'
 })
 
 
