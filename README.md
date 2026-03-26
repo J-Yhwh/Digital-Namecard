@@ -71,5 +71,9 @@ Copy and paste the localhost address ```http://localhost:5173/``` shown on Termi
 Edit source file ``` ~/Directory...FILEPATH/src/App.vue```  for changes to html, css, font, size, QR Code,  etc properties when necessary. 
 P.S - Macro designs like overall backgound colour schemes, padding etc can be added to the external Tailwind and CSS files, found in ```~/Directory...FILEPATH/Tailwind.config.ts``` and  ```~/Directory...FILEPATH/src/style.css``` respectively. 
 
+Contributor:  Jacqueline Liao 
 
 
+
+
+  
