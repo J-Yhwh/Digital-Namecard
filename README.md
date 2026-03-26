@@ -66,5 +66,6 @@ cd ~/Directory...FILEPATH/ npm run dev
 ```bash
 ~/Directory...FILEPATH/ npm run build
 ```
+Edit source file: ``` ~/Directory...FILEPATH/src/App.vue``` to make changes (html, css, font, size, QR Code details etc) when necessary. 
 
 
