@@ -64,8 +64,12 @@ cd ~/Directory...FILEPATH/ npm run dev
 3. Compile and Minify for Production (modify/add/overhaul design)
 
 ```bash
-~/Directory...FILEPATH/ npm run build
+~/Directory...FILEPATH/ npm run dev
 ```
-Edit source file: ``` ~/Directory...FILEPATH/src/App.vue``` to make changes (html, css, font, size, QR Code details etc) when necessary. 
+Copy and paste the localhost address ```http://localhost:5173/``` shown on Terminal (or Powershell/CMD on Windows) on your web browser URL to view the completed Digital Namecard design, 
+   
+Edit source file ``` ~/Directory...FILEPATH/src/App.vue```  for changes to html, css, font, size, QR Code,  etc properties when necessary. 
+P.S - Macro designs like overall backgound colour schemes, padding etc can be added to the external Tailwind and CSS files, found in ```~/Directory...FILEPATH/Tailwind.config.ts``` and  ```~/Directory...FILEPATH/src/style.css``` respectively. 
+
 
 
