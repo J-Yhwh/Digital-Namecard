@@ -13,7 +13,7 @@ This template should help get you started developing with Vue 3 in Vite.
 - Native share button (iOS/Android)
 - Clipboard fallback
 - Responsive & modern design (Vue 3 + TypeScript + Vite + Tailwind)
-- Can be used on it own, or integrated with existing apps and portals via APIs
+- Can be used on its own, or integrated with existing apps and web portals/user accounts via APIs
 
 
 
