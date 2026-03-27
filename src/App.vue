@@ -56,13 +56,13 @@ import { useClipboard } from '@vueuse/core'
 
 // Profile data
 const profile = ref({
-  name: 'Jane Doe',
-  title: 'Full-Stack Developer',
-  mobile1: '+65 81234567',
-  mobile2: '+61 487654321',
-  email: 'anaconda@reptile.com',
-  website: 'https://github.com/J-Yhwh',
-  bio: 'Python is my kind of snake.'
+  name: "Jacqueline L'aigle Liao",
+  title: "Back-end Developer",
+  mobile1: "+65 80271755",
+  mobile2: "+61 416880385",
+  email: "jacquie_ll25@proton.me",
+  website: "https://github.com/J-Yhwh",
+  bio: "Python.Pandas.Pipelines.AI/ML"
 })
 
 // vCard string
@@ -75,8 +75,8 @@ TITLE:${profile.value.title}
 
 TEL;TYPE=CELL,PREF:${profile.value.phone}
 
-TEL;TYPE=CELL::65 81234567
-TEL;TYPE=CELL:+61 487654321
+TEL;TYPE=CELL::65 80271755
+TEL;TYPE=CELL:+61 416880385
 
 EMAIL:${profile.value.email}
 URL:${profile.value.website}
@@ -84,41 +84,82 @@ NOTE:${profile.value.bio}
 END:VCARD
 `); 
 
-// QR value
-const qrValue = computed(() => vCard.value)
+// NEW: Detect Android
+const isAndroid = computed(() => /android/i.test(navigator.userAgent))
+
+// Smart QR value
+const qrValue = computed(() => {
+  if (isAndroid.value) {
+    return `${window.location.origin}/contact` // Directs to contact page for copy/save in Android OS
+  }
+  // iOS and others keep the raw vCard
+  return vCard.value
+})
 
 // Clipboard helper
 const { copy } = useClipboard()
 
 
 const card = {
-  name: 'Jane Doe',
-  title: 'Full-Stack Developer',
+  name: 'Jacqueline L',
+  title: 'Back-end Developer',
   quote: 'Python is my kind of snake.',
   contacts: [
-    { icon: '📱', label: 'Mobile 1', value: '+65 81234567' },
-    { icon: '📱', label: 'Mobile 2', value: '+61 487654321' },
-    { icon: '📧', label: 'Email',    value: 'anaconda@reptile.com',       href: 'mailto:anaconda@reptile.com' },
+    { icon: '📱', label: 'Mobile 1', value: '+65 80271755' },
+    { icon: '📱', label: 'Mobile 2', value: '+61 416880385' },
+    { icon: '📧', label: 'Email',    value: 'jacquie_ll25@proton.me',       href: 'mailto:jacquie_ll25@proton.me' },
     { icon: '🌐', label: 'Website',  value: 'https://github.com/J-Yhwh', href: 'https://github.com/J-Yhwh' },
   ],
 }
 
 
-const copyLabel = ref('Copy ⧉')
+const copyLabel = ref('Copy ⧉') 
 
+
+// Improved Share function - uses full vCard
 async function handleShare() {
+  const shareData = {
+    title: `${profile.value.name} - Digital Business Card`,
+    text: `Contact ${profile.value.name}`,
+    url: window.location.href,           // fallback URL
+  }
+
+  // Try to share the actual .vcf file (best experience)
+  if (navigator.canShare && navigator.canShare({ files: [] })) {
+    try {
+      const blob = new Blob([vCard.value], { type: 'text/vcard' })
+      const file = new File([blob], `${profile.value.name}.vcf`, { type: 'text/vcard' })
+
+      await navigator.share({
+        ...shareData,
+        files: [file]
+      })
+      return
+    } catch (err) {
+      console.log('File sharing failed, falling back...', err)
+    }
+  }
+
+  // Fallback: just share the page (still better than only GitHub)
   try {
-    await navigator.share({ title: card.name, url: card.contacts[3].href })
-  } catch {
+    await navigator.share(shareData)
+  } catch (err) {
     alert('Sharing not supported in this browser.')
   }
 }
 
+// Improved Copy function - copies the FULL vCard
 async function handleCopy() {
-  const text = card.contacts.map(c => `${c.label}: ${c.value}`).join('\n')
-  await navigator.clipboard.writeText(text)
-  copyLabel.value = 'Copied ✓'
-  setTimeout(() => (copyLabel.value = 'Copy ⧉'), 2000)
+  try {
+    await navigator.clipboard.writeText(vCard.value)
+    copyLabel.value = 'Copied ✓'
+    
+    setTimeout(() => {
+      copyLabel.value = 'Copy ⧉'
+    }, 2000)
+  } catch (err) {
+    alert('Failed to copy to clipboard.')
+  }
 }
 </script>
 
