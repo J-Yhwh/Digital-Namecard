@@ -56,11 +56,11 @@ import { useClipboard } from '@vueuse/core'
 
 // Profile data
 const profile = ref({
-  name: "Jacqueline L'aigle Liao",
+  name: "Jane Doe",
   title: "Back-end Developer",
-  mobile1: "+65 80271755",
-  mobile2: "+61 416880385",
-  email: "jacquie_ll25@proton.me",
+  mobile1: "+65 80123456",
+  mobile2: "+61 419876543",
+  email: "anaconda@reptile.com",
   website: "https://github.com/J-Yhwh",
   bio: "Python.Pandas.Pipelines.AI/ML"
 })
@@ -75,8 +75,8 @@ TITLE:${profile.value.title}
 
 TEL;TYPE=CELL,PREF:${profile.value.phone}
 
-TEL;TYPE=CELL::65 80271755
-TEL;TYPE=CELL:+61 416880385
+TEL;TYPE=CELL::65 80123456
+TEL;TYPE=CELL:+61 419876543
 
 EMAIL:${profile.value.email}
 URL:${profile.value.website}
@@ -101,13 +101,13 @@ const { copy } = useClipboard()
 
 
 const card = {
-  name: 'Jacqueline L',
+  name: 'Jane Doe",
   title: 'Back-end Developer',
   quote: 'Python is my kind of snake.',
   contacts: [
-    { icon: '📱', label: 'Mobile 1', value: '+65 80271755' },
-    { icon: '📱', label: 'Mobile 2', value: '+61 416880385' },
-    { icon: '📧', label: 'Email',    value: 'jacquie_ll25@proton.me',       href: 'mailto:jacquie_ll25@proton.me' },
+    { icon: '📱', label: 'Mobile 1', value: '+65 80123456' },
+    { icon: '📱', label: 'Mobile 2', value: '+61 419876543' },
+    { icon: '📧', label: 'Email',    value: 'anaconda@reptile.com',       href: 'mailto:janaconda@reptile.com' },
     { icon: '🌐', label: 'Website',  value: 'https://github.com/J-Yhwh', href: 'https://github.com/J-Yhwh' },
   ],
 }
