@@ -1,0 +1,17 @@
+# Node.js
+node_modules/
+npm-debug.log
+
+# Build output
+/dist/
+/build/
+
+# IDEs
+/.idea/
+/.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Operating System
+.DS_Store
+Thumbs.db
