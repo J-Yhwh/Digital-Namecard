@@ -58,8 +58,8 @@ import { useClipboard } from '@vueuse/core'
 const profile = ref({
   name: "Jane Doe",
   title: "Back-end Developer",
-  mobile1: "+65 80123456",
-  mobile2: "+61 419876543",
+  mobile1: "+65 87654321",
+  mobile2: "+61 456789012",
   email: "anaconda@reptile.com",
   website: "https://github.com/J-Yhwh",
   bio: "Python.Pandas.Pipelines.AI/ML"
@@ -75,8 +75,8 @@ TITLE:${profile.value.title}
 
 TEL;TYPE=CELL,PREF:${profile.value.phone}
 
-TEL;TYPE=CELL::65 80123456
-TEL;TYPE=CELL:+61 419876543
+TEL;TYPE=CELL::65 87654321
+TEL;TYPE=CELL:+61 456789012
 
 EMAIL:${profile.value.email}
 URL:${profile.value.website}
@@ -105,9 +105,9 @@ const card = {
   title: 'Back-end Developer',
   quote: 'Python is my kind of snake.',
   contacts: [
-    { icon: '📱', label: 'Mobile 1', value: '+65 80123456' },
-    { icon: '📱', label: 'Mobile 2', value: '+61 419876543' },
-    { icon: '📧', label: 'Email',    value: 'anaconda@reptile.com',       href: 'mailto:janaconda@reptile.com' },
+    { icon: '📱', label: 'Mobile 1', value: '+65 87654321' },
+    { icon: '📱', label: 'Mobile 2', value: '+61 456789012' },
+    { icon: '📧', label: 'Email',    value: 'anaconda@reptile.com',       href: 'mailto:anaconda@reptile.com' },
     { icon: '🌐', label: 'Website',  value: 'https://github.com/J-Yhwh', href: 'https://github.com/J-Yhwh' },
   ],
 }
