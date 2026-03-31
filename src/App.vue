@@ -101,7 +101,7 @@ const { copy } = useClipboard()
 
 
 const card = {
-  name: 'Jane Doe",
+  name: 'Jane Doe',
   title: 'Back-end Developer',
   quote: 'Python is my kind of snake.',
   contacts: [
