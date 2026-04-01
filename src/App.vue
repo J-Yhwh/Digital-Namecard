@@ -1,5 +1,6 @@
 
 
+
 <template>
   <div class="card-wrapper">
     <div class="card">
@@ -58,11 +59,11 @@ import { useClipboard } from '@vueuse/core'
 const profile = ref({
   name: "Jane Doe",
   title: "Back-end Developer",
-  mobile1: "+65 87654321",
+  mobile1: "+65 8765 4321",
   mobile2: "+61 456789012",
   email: "anaconda@reptile.com",
   website: "https://github.com/J-Yhwh",
-  bio: "Python.Pandas.Pipelines.AI/ML"
+  bio: "Python is my kind of snake."
 })
 
 // vCard string
@@ -75,7 +76,7 @@ TITLE:${profile.value.title}
 
 TEL;TYPE=CELL,PREF:${profile.value.phone}
 
-TEL;TYPE=CELL::65 87654321
+TEL;TYPE=CELL::65 807654321
 TEL;TYPE=CELL:+61 456789012
 
 EMAIL:${profile.value.email}
@@ -102,10 +103,10 @@ const { copy } = useClipboard()
 
 const card = {
   name: 'Jane Doe',
-  title: 'Back-end Developer',
+  title: 'Backend Developer',
   quote: 'Python is my kind of snake.',
   contacts: [
-    { icon: '📱', label: 'Mobile 1', value: '+65 87654321' },
+    { icon: '📱', label: 'Mobile 1', value: '+65 87654321'},
     { icon: '📱', label: 'Mobile 2', value: '+61 456789012' },
     { icon: '📧', label: 'Email',    value: 'anaconda@reptile.com',       href: 'mailto:anaconda@reptile.com' },
     { icon: '🌐', label: 'Website',  value: 'https://github.com/J-Yhwh', href: 'https://github.com/J-Yhwh' },
@@ -211,22 +212,18 @@ async function handleCopy() {
   flex-direction: column;
   justify-content: center;
   gap: 14px;
+  background: #0d1b2e; /* ← navy blue */
 }
 
-.contact-item { display: flex; align-items: center; gap: 12px; font-size: 0.88rem; color: #2a2a40; }
-.contact-icon { font-size: 1.2rem; width: 28px; text-align: center; flex-shrink: 0; }
-.contact-label { font-weight: 700; color: #1a1a30; margin-right: 4px; }
-.contact-value a { color: #4444aa; text-decoration: none; }
-.contact-value a:hover { text-decoration: underline; }
-
-.divider { width: 100%; height: 1px; background: #c8cadf; }
-
-.buttons { display: flex; gap: 10px; margin-top: 6px; }
-.btn {
+.contact-item { display: flex; align-items: center; gap: 12px; font-size: 0.88rem; color: #e0e0f0; }
+.contact-label { font-weight: 700; color: #ffffff; margin-right: 4px; }
+.contact-value a { color: #9ab4ff; text-decoration: none; }
+.divider { width: 100%; height: 1px; background: #2e3f5c; }
+.btn { 
   display: inline-flex; align-items: center; gap: 6px;
-  padding: 7px 16px; border: 1.5px solid #aaaacc; border-radius: 8px;
-  background: transparent; color: #444466; font-size: 0.8rem;
+  padding: 7px 16px; border: 1.5px solid #4a5f7a; border-radius: 8px;
+  background: transparent; color: #c0cfe0; font-size: 0.8rem;
   cursor: pointer; transition: background 0.2s, color 0.2s; font-family: inherit;
 }
-.btn:hover { background: #ddddf5; color: #1a1a30; }
+.btn:hover { background: #1a2d42; color: #ffffff; }
 </style>
