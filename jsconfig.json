@@ -1,6 +1,7 @@
 
 
 {
+  "//": "© 2026 Jacqueline [Your Last Name]. All Rights Reserved.",
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"]
