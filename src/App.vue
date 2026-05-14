@@ -1,4 +1,4 @@
-<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Your Name All Rights Reserved</p>
+<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Jac LL. All Rights Reserved</p>
 
 
 <template>
