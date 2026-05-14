@@ -1,3 +1,4 @@
+<p>&copy; <script>document.write(new Date().getFullYear())</script> Jac LL. All Rights Reserved</p>
 
 /** @type {import('tailwindcss').Config} */
 export default {
