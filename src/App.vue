@@ -20,7 +20,7 @@
      />
         </div>
       </div>
-
+      
       <!-- RIGHT PANEL -->
       <div class="right">
         <template v-for="(item, index) in card.contacts" :key="item.label">
@@ -44,6 +44,15 @@
       </div>
     </div>
   </div>
+
+  <!-- Copyright Footer -->
+  <footer class="mt-12 py-6 text-center text-xs text-gray-500 border-t">
+    Copyright &copy; {{ new Date().getFullYear() }} Jac LL. 
+    All Rights Reserved.<br>
+    Unauthorized copying, distribution, or use is strictly prohibited.
+  </footer>
+
+
 </template>
 
 
