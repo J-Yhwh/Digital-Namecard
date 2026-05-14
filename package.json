@@ -1,6 +1,7 @@
 {
   "name": "digital-namecard",
   "version": "0.0.0",
+  "copyright": "© 2026 Jac LL. All Rights Reserved. Unauthorized copying, distribution, or use is strictly prohibited.",
   "private": true,
   "type": "module",
   "scripts": {
